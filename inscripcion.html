@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripción | Dispensario Botánico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="inscripcion.html">Inscripción</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <h1>Formulario de Inscripción</h1>
+    <form action="https://formsubmit.co/rbuzeta@mabotanics.cl" method="POST" class="formulario">
+      <input type="text" name="name" placeholder="Nombre completo" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Motivo de tu inscripción..." required></textarea>
+      <button type="submit" class="btn">Enviar inscripción</button>
+
+      <!-- Opcional: Redirigir después de enviar -->
+      <input type="hidden" name="_next" value="https://bucronik.github.io/dispensario-botanico/gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Dispensario Botánico</p>
+  </footer>
+
+</body>
+</html>

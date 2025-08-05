@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contacto | Dispensario Botánico</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,16 +13,42 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="acerca.html">Acerca</a></li>
         <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
       </ul>
     </nav>
     <div class="hero">
       <h1>Contáctanos</h1>
-      <p>📍 Providencia 1234, Santiago  
-         📞 +56 9 1234 5678  
-         📧 contacto@dispensariobotanico.cl</p>
+      <p>Estamos aquí para ayudarte. Si tienes preguntas, necesitas orientación o quieres participar en nuestra comunidad, escríbenos.</p>
     </div>
   </header>
+
+  <main class="content">
+    <section class="contact-section">
+      <div class="contact-info">
+        <h2>📍 Dirección</h2>
+        <p>Américo Vespucio 2650, Santiago, Chile</p>
+
+        <h2>📞 Teléfono</h2>
+        <p>+56 9 3178 9778</p>
+
+        <h2>📧 Correo</h2>
+        <p><a href="mailto:contacto@dispensariobotanico.cl">contacto@dispensariobotanico.cl</a></p>
+      </div>
+
+      <div class="contact-form">
+        <h2>Formulario de contacto</h2>
+        <form action="https://formsubmit.co/contacto@dispensariobotanico.cl" method="POST">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu correo" required>
+          <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dispensario Botánico. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
-
