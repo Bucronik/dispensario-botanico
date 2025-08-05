@@ -15,6 +15,10 @@
 /* ==========================
    Base
 ========================== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: var(--font-main);
@@ -44,6 +48,7 @@ nav ul {
   padding: 20px;
   margin: 0;
   background-color: var(--color-bg);
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -64,7 +69,7 @@ nav ul li .active {
 }
 
 /* ==========================
-   Hero / Encabezados Principales
+   Hero / Inicio
 ========================== */
 .hero {
   padding: 80px 20px;
@@ -84,7 +89,7 @@ nav ul li .active {
    Logo
 ========================== */
 .logo {
-  width: 420px;
+  width: 320px;
   margin-bottom: 5px;
   max-width: 90%;
 }
@@ -120,7 +125,6 @@ nav ul li .active {
   text-align: left;
 }
 
-/* About */
 .about-section {
   margin-bottom: 40px;
 }
@@ -131,7 +135,9 @@ nav ul li .active {
   color: var(--color-accent);
 }
 
-/* Servicios */
+/* ==========================
+   Servicios
+========================== */
 .services {
   display: grid;
   grid-template-columns: 1fr;
@@ -198,29 +204,40 @@ nav ul li .active {
   text-decoration: none;
 }
 
-/* Formulario de contacto */
-.contact-form form {
+/* ==========================
+   Formulario
+========================== */
+.contact-form form,
+.formulario {
   display: flex;
   flex-direction: column;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.formulario input,
+.formulario textarea {
   background-color: var(--color-bg-alt);
-  border: 1px solid #fcd77933;
+  border: 2px solid var(--color-accent);
   color: var(--color-accent);
   padding: 12px;
   margin-bottom: 15px;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 1em;
 }
 
 .contact-form input::placeholder,
-.contact-form textarea::placeholder {
+.contact-form textarea::placeholder,
+.formulario input::placeholder,
+.formulario textarea::placeholder {
   color: #fcd779aa;
 }
 
-.contact-form button {
+.contact-form button,
+.formulario button {
   background-color: transparent;
   border: 2px solid var(--color-accent);
   color: var(--color-accent);
@@ -231,7 +248,8 @@ nav ul li .active {
   transition: 0.3s;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.formulario button:hover {
   background-color: var(--color-accent);
   color: var(--color-bg);
 }
@@ -247,4 +265,61 @@ footer {
   font-size: 0.9em;
   border-top: 1px solid #fcd77944;
   margin-top: 60px;
+}
+
+/* ==========================
+   Tipografía Adaptativa
+========================== */
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+}
+
+p, li {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* ==========================
+   Responsive Móvil
+========================== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .logo {
+    width: 250px;
+    max-width: 80%;
+  }
+
+  input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  .service-card,
+  .contact-info,
+  .formulario {
+    text-align: left;
+  }
+
+  footer {
+    font-size: 0.75em;
+  }
 }

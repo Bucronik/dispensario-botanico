@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inscripción | Dispensario Botánico</title>
+  <meta name="description" content="Formulario de inscripción a la comunidad del Dispensario Botánico. Accede a orientación, beneficios y contenidos exclusivos sobre cannabis medicinal.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,27 +16,31 @@
         <li><a href="acerca.html">Acerca</a></li>
         <li><a href="servicios.html">Servicios</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="inscripcion.html">Inscripción</a></li>
+        <li><a href="inscripcion.html" class="active">Inscripción</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="hero">
-    <h1>Formulario de Inscripción</h1>
-    <form action="https://formsubmit.co/rbuzeta@mabotanics.cl" method="POST" class="formulario">
-      <input type="text" name="name" placeholder="Nombre completo" required>
-      <input type="email" name="email" placeholder="Correo electrónico" required>
-      <textarea name="mensaje" rows="5" placeholder="Motivo de tu inscripción..." required></textarea>
-      <button type="submit" class="btn">Enviar inscripción</button>
+  <main class="content">
+    <section class="hero">
+      <h1>Formulario de Inscripción</h1>
+      <p>Forma parte de nuestra comunidad de usuarios y accede a orientación profesional, actividades, contenido exclusivo y acompañamiento legal.</p>
 
-      <!-- Opcional: Redirigir después de enviar -->
-      <input type="hidden" name="_next" value="https://bucronik.github.io/dispensario-botanico/gracias.html">
-      <input type="hidden" name="_captcha" value="false">
-    </form>
+      <form action="https://formsubmit.co/rbuzeta@mabotanics.cl" method="POST" class="formulario">
+        <input type="text" name="name" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" rows="5" placeholder="Motivo de tu inscripción..." required></textarea>
+        <button type="submit" class="btn">Enviar inscripción</button>
+
+        <!-- Opcional: Redirigir después de enviar -->
+        <input type="hidden" name="_next" value="https://bucronik.github.io/dispensario-botanico/gracias.html">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Dispensario Botánico</p>
+    <p>&copy; 2025 Dispensario Botánico. Todos los derechos reservados.</p>
   </footer>
 
 </body>

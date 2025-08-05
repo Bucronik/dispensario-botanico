@@ -11,20 +11,71 @@
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="acerca.html">Acerca</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Acerca</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#inscripcion">Inscripción</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="hero">
+  <!-- Inicio -->
+  <section id="inicio" class="hero">
     <img src="logo.png" alt="Logo Dispensario Botánico" class="logo">
     <h1>DISPENSARIO BOTÁNICO</h1>
     <p>Fundación de usuarios medicinales de cannabis y productos botánicos</p>
-    <a href="inscripcion.html" class="btn">Inscríbete</a>
-  </main>
+    <a href="#inscripcion" class="btn">Inscríbete</a>
+  </section>
+
+  <!-- Acerca -->
+  <section id="acerca" class="content about-section">
+    <h2>Acerca de Nosotros</h2>
+    <p>Somos una fundación comprometida con el bienestar de las personas que utilizan cannabis medicinal y productos botánicos como tratamiento complementario. Educamos, asesoramos y defendemos el derecho a una salud natural y segura.</p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="services">
+    <div class="service-card">
+      <h2>Asesoría Médica</h2>
+      <p>Te conectamos con profesionales de la salud especializados en cannabis medicinal.</p>
+    </div>
+    <div class="service-card">
+      <h2>Educación y Talleres</h2>
+      <p>Charlas, talleres y formación continua para pacientes y profesionales.</p>
+    </div>
+    <div class="service-card">
+      <h2>Defensa Legal</h2>
+      <p>Apoyo jurídico a usuarios medicinales en caso de persecución o incautaciones.</p>
+    </div>
+    <div class="service-card">
+      <h2>Cultivo Solidario</h2>
+      <p>Proyectos de cultivo colectivo para asegurar acceso justo y seguro.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contact-section">
+    <div class="contact-info">
+      <h2>Contáctanos</h2>
+      <p>📍 Providencia 1234, Santiago</p>
+      <p>📞 +56 9 1234 5678</p>
+      <p>📧 contacto@dispensariobotanico.cl</p>
+    </div>
+  </section>
+
+  <!-- Inscripción -->
+  <section id="inscripcion" class="formulario">
+    <h2>Formulario de Inscripción</h2>
+    <form action="https://formsubmit.co/rbuzeta@mabotanics.cl" method="POST">
+      <input type="text" name="name" placeholder="Nombre completo" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Motivo de tu inscripción..." required></textarea>
+      <button type="submit" class="btn">Enviar inscripción</button>
+      <input type="hidden" name="_next" value="https://bucronik.github.io/dispensario-botanico/gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </section>
 
   <footer>
     <p>© 2025 Dispensario Botánico. Todos los derechos reservados.</p>
@@ -32,7 +83,3 @@
 
 </body>
 </html>
-
-
-
-
